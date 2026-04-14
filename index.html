@@ -12,39 +12,44 @@
         <div class="container">
             <header>
                 <div class="top-nav">
+                    <form action="">
+                        <p>
+                            <label for="search-bar">
+                                <span class="iconify" data-icon="mdi-search"></span>
+                            </label>
+                            <input type="search" name="search" id="search-bar">
+                        </p>
+                    </form>
                     <div class="top-nav-content">
-                        <form action="">
-                            <p>
-                                <label for="search-bar">
-                                    <span class="iconify" data-icon="mdi-search"></span>
-                                </label>
-                                <input type="search" name="search" id="search-bar">
-                            </p>
-                        </form>
-                        <div class="top-nav-content">
-                            <div class="notifications">
-                                <span class="iconify" data-icon="mdi-notifications-active"></span>
-                            </div>
-                            <div class="user-avatar"></div>
-                            <div class="user-info">Morgan Oakley</div>
+                        <div class="notifications">
+                            <span class="iconify" data-icon="mdi-notifications-active"></span>
                         </div>
+                        <div class="user-avatar">Avatar</div>
+                        <div class="user-info">Morgan Oakley</div>
                     </div>
-                    <div class="bottom-nav-content">
+                </div>
+                <div class="bottom-nav">
+                    <div class="user-info">
                         <div class="user-avatar">Avatar</div>
                         <span>Hi there,</span>
                         <span class="user-info">Morgan Oakley (@morgan)</span>
-                        <ul class="menu">
-                            <li>New</li>
-                            <li>Upload</li>
-                            <li>Share</li>
-                        </ul>
                     </div>
+                    <ul class="menu">
+                        <li>New</li>
+                        <li>Upload</li>
+                        <li>Share</li>
+                    </ul>
                 </div>
             </header>
             <div class="sidebar">
-                <div class="logo">Logo</div>
-                <span>Dashboard</span>
-
+                <!-- <div class="sidebar-top">
+                    <div class="logo">Logo</div>
+                    <span>Dashboard</span>
+                </div> -->
+                <ul>
+                    <li>Logo</li>
+                    <li>Dashboard</li>
+                </ul>
                 <ul class="main-nav">
                     <li><span class="iconify" data-icon="mdi-home"></span></li>
                     <li>Home</li>
@@ -71,98 +76,128 @@
             <div class="main-container">
                 <main>
                     <h2>Your Projects</h2>
-                    <div class="card">
-                        <p class="title">Super Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto quo,
-                            ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
-                            praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
-                        <ul>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <p class="title">Less Cool Project</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto quo,
-                            ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
-                            praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
-                        <ul>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <p class="title">Impossible App</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto quo,
-                            ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
-                            praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
-                        <ul>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <p class="title">Easy Peasy App</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto quo,
-                            ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
-                            praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
-                        <ul>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <p class="title">Ad Blocker</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto quo,
-                            ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
-                            praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
-                        <ul>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <p class="title">Money Maker</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto quo,
-                            ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
-                            praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
-                        <ul>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                            <li>Logo</li>
-                        </ul>
-                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <p class="title">Super Cool Project</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto
+                                quo,
+                                ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
+                                praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
+                            <ul>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <p class="title">Less Cool Project</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto
+                                quo,
+                                ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
+                                praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
+                            <ul>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <p class="title">Impossible App</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto
+                                quo,
+                                ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
+                                praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
+                            <ul>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <p class="title">Easy Peasy App</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto
+                                quo,
+                                ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
+                                praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
+                            <ul>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <p class="title">Ad Blocker</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto
+                                quo,
+                                ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
+                                praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
+                            <ul>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <p class="title">Money Maker</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quis architecto
+                                quo,
+                                ducimus nulla, ab asperiores voluptas dignissimos, voluptatibus voluptate commodi dolore
+                                praesentium numquam aspernatur! Totam soluta impedit perspiciatis porro.</p>
+                            <ul>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                                <li>Logo</li>
+                            </ul>
+                        </div>
                 </main>
                 <aside>
-                    <div class="top-aside">
-                        <div class="card">
-                            <p class="title">Community Share Day</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore dolorum iste ab est
-                                eos
-                                inventore explicabo suscipit quasi! Totam praesentium temporibus facilis reprehenderit
-                                aspernatur possimus eius quis, accusantium deleniti!</p>
-                        </div>
-                        <div class="card">
-                            <p class="title">Updated Privacy Policy</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore dolorum iste ab est
-                                eos
-                                inventore explicabo suscipit quasi! Totam praesentium temporibus facilis reprehenderit
-                                aspernatur possimus eius quis, accusantium deleniti!</p>
+                    <div class="aside-container">
+                        <h2>Announcements</h2>
+                        <div class="card-container">
+                            <div class="card">
+                                <h3 class="title">Site Maintenance</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore dolorum iste
+                                    ab
+                                    est
+                                    eos
+                                    inventore explicabo suscipit quasi! Totam praesentium temporibus facilis
+                                    reprehenderit
+                                    aspernatur possimus eius quis, accusantium deleniti!</p>
+                            </div>
+                            <div class="card">
+                                <h3 class="title">Community Share Day</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore dolorum iste
+                                    ab
+                                    est
+                                    eos
+                                    inventore explicabo suscipit quasi! Totam praesentium temporibus facilis
+                                    reprehenderit
+                                    aspernatur possimus eius quis, accusantium deleniti!</p>
+                            </div>
+                            <div class="card">
+                                <h3 class="title">Updated Privacy Policy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolore dolorum iste
+                                    ab
+                                    est
+                                    eos
+                                    inventore explicabo suscipit quasi! Totam praesentium temporibus facilis
+                                    reprehenderit
+                                    aspernatur possimus eius quis, accusantium deleniti!</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="bottom-aside">
-                        <u>
-                            <li>@tegan</li>
-                            <li>@morgan</li>
-                            <li>@kendall</li>
-                            <li>@alex</li>
-                        </u>
+                    <div class="aside-container">
+                        <h2>Trending</h2>
+                        <div class="list-container">
+                            <ul>
+                                <li>@tegan</li>
+                                <li>@morgan</li>
+                                <li>@kendall</li>
+                                <li>@alex</li>
+                            </ul>
+                        </div>
                     </div>
+
                 </aside>
             </div>
 

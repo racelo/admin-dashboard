@@ -41,30 +41,8 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-.container {
-    border: 2px solid red;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
 
-header {
-    border: 2px solid blue;
-    grid-column: 2;
-    grid-row: 1;
-}
 
-.sidebar {
-    border: 2px solid green;
-    grid-column: 1;
-    grid-row: 1 / 3;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5% 20% 20%;
-}
-
-.main-container {
-    border: 2px solid purple;
-}
 
 li {
     list-style: none;
@@ -74,13 +52,116 @@ span {
     display: block;
 }
 
+.container {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+header {
+    border: 2px solid blue;
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .top-nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 100px;
+}
+
+header .top-nav > form > p {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+header .top-nav-content {
+    display: grid;
+    grid-template-columns: 15% 20% 65%;
+}
+
+header .bottom-nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+header .bottom-nav > .user-info {
+    display: grid;
+    grid-template-columns: 20% 50%
+}
+
+header .bottom-nav .user-avatar {
+    grid-row: 1 / 3;
+    justify-self: center;
+}
+
+header .bottom-nav > .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header .bottom-nav > .user-avatar {
+    grid-row: 1 / 3;
+}
+
+
+.sidebar {
+    border: 2px solid green;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 5% 20% 20%;
+}
+
+.sidebar > .sidebar-top {
+    display: grid;
+    grid-template-columns: 40px 40px;
+}
+
+.main-container {
+    border: 2px solid purple;
+}
+
 .sidebar > ul  {
     border: 2px solid red;
     display: grid;
-    grid-template-columns: 25px 25px;
+    grid-template-columns: 40px 40px;
     grid-template-rows: repeat(6, 40px);
 }
 
 .sidebar .main-nav {
-    grid-column: 1 / 3;
+    /* grid-column: 1 / 3; */
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-container main > .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+aside {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+aside > .aside-container:first-child > .card-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+main > .card-container > .card > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    justify-content: end;
 }
