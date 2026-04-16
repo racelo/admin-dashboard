@@ -1,3 +1,3 @@
 # admin-dashboard
 
-Live Repo: 
+Live Repo: https://racelo.github.io/admin-dashboard/
